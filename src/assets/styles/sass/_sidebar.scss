@@ -1,0 +1,45 @@
+.sidebar {
+  flex: 26%;
+  margin-left: 3.5rem;
+  background-color: #efefef;
+  padding: 1.5rem;
+  height: fit-content;
+
+  &-recommended {
+    margin-bottom: 40px;
+    h3 {
+      text-align: center;
+      margin: 20px 0;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+
+    article {
+      margin: 20px 0;
+      a {
+        .article-image {
+          width: 120px;
+          height: 68px;
+        }
+
+        .article-content {
+          margin-left: 1rem;
+          display: flex;
+          flex-direction: column-reverse;
+
+          .article-date {
+            font-size: 11px;
+          }
+
+          h4 {
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .sidebar-dummy-banner-sub {
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,35 @@
+.site-footer {
+  clear: both;
+
+  .site-footer-page-top {
+    padding: 1em 8.5em;
+    text-align: right;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 8.5em;
+    background: #000;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    justify-content: space-between;
+
+    &-left {
+      a {
+        &:last-child {
+          margin-left: 1rem;
+        }
+
+        &:hover,
+        &:focus {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

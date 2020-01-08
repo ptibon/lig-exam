@@ -1,0 +1,97 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.carousel-indicator {
+  position: relative;
+  flex: 0 1 auto;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.3em;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background-color: #e7b92f;
+  cursor: default;
+}
+
+.carousel-indicator:hover {
+  background-color: #e7b92f;
+}
+
+.carousel-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.items {
+  height: 500px;
+  max-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+
+.items .content {
+  margin-top: -5em;
+}
+
+.items .content .h2 {
+  margin-bottom: 10px;
+}
+
+.carousel-controls button {
+  all: unset;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.carousel-controls button.left-control {
+  left: 8%;
+}
+
+.carousel-controls button[disabled] {
+  cursor: not-allowed;
+}
+
+.carousel-controls button.right-control {
+  right: 8%;
+}
+
+.carousel-inner {
+  color: #fff;
+}

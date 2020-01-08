@@ -1,0 +1,303 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Yu-Gothic Bold';
+  src: url('../../fonts/yugothib.ttf');
+}
+
+@font-face {
+  font-family: 'Yu-Gothic Regular';
+  src: url('../../fonts/yugothil.ttf');
+}
+
+@font-face {
+  font-family: 'Lucida Calligraphy';
+  src: url('../../fonts/Lucida_Calligraphy_Italic.ttf');
+}
+
+body {
+  font-size: 14px;
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro',
+    'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック',
+    'MS PGothic', sans-serif;
+  line-height: 1.4;
+  color: #333;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: unset;
+}
+a:hover,
+a:focus {
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+.site-header {
+  text-align: center;
+  border-top: 2px solid #e7b92f;
+  font-family: 'Lucida Calligraphy', sans-serif;
+}
+.site-header h2 {
+  padding: 15px;
+}
+.site-header h2 a {
+  color: #333;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.site-footer {
+  clear: both;
+}
+.site-footer .site-footer-page-top {
+  padding: 1em 8.5em;
+  text-align: right;
+}
+.site-footer .site-footer-page-top img {
+  cursor: pointer;
+}
+.site-footer .nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 8.5em;
+  background: #000;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  justify-content: space-between;
+}
+.site-footer .nav-left a:last-child {
+  margin-left: 1rem;
+}
+.site-footer .nav-left a:hover,
+.site-footer .nav-left a:focus {
+  color: #e7b92f;
+}
+
+.sidebar {
+  flex: 26%;
+  margin-left: 3.5rem;
+  background-color: #efefef;
+  padding: 1.5rem;
+  height: fit-content;
+}
+.sidebar-recommended {
+  margin-bottom: 40px;
+}
+.sidebar-recommended h3 {
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+.sidebar-recommended article {
+  margin: 20px 0;
+}
+.sidebar-recommended article a .article-image {
+  width: 120px;
+  height: 68px;
+}
+.sidebar-recommended article a .article-content {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.sidebar-recommended article a .article-content .article-date {
+  font-size: 11px;
+}
+.sidebar-recommended article a .article-content h4 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.sidebar .sidebar-dummy-banner-sub {
+  margin: 20px 0;
+}
+
+.article a {
+  display: flex;
+  align-items: center;
+}
+.article a .article-image {
+  object-fit: cover;
+}
+.article a .article-date {
+  color: #9c9c9c;
+}
+.article a .article-title {
+  font-weight: bold;
+}
+.article a .article-title:hover {
+  color: #e7b92f;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem 7rem;
+  display: flex;
+}
+.container section.content {
+  flex: 74%;
+}
+.container section.content .article:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.container section.content .article a .article-image {
+  width: 210px;
+  height: 108px;
+}
+.container section.content .article a .article-content {
+  margin-left: 1.5rem;
+}
+.container section.content .article a .article-content .article-title {
+  margin: 4px auto 4px;
+}
+.container section.content .article a .article-content .article-preview {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+.container section.content .content-articles-footer {
+  margin: 4rem auto 2.5rem 0;
+  text-align: center;
+}
+.container section.content .content-articles-footer-btn {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 12rem;
+  font-size: 20px;
+  color: #fff;
+  background-color: #333;
+}
+.container
+  section.content
+  .content-articles-footer-btn
+  .content-articles-arrow {
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  width: 8px;
+}
+
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 4rem;
+  }
+  .container {
+    padding: 1.5rem 7rem;
+  }
+  .container section.content {
+    flex: 76%;
+  }
+  .container section.content .article:not(:first-child) {
+    margin-top: 2rem;
+  }
+  .container section.content .article a .article-content {
+    margin-left: 2rem;
+  }
+  .container section.content .article a .article-date {
+    font-size: 16px;
+  }
+  .container section.content .article a .article-content .article-title {
+    margin: 6px auto 6px;
+    font-size: 18px;
+  }
+  .container section.content .article a .article-content .article-preview {
+    margin: 6px auto 0;
+    font-size: 15px;
+  }
+  .container .sidebar {
+    flex: 24%;
+  }
+}
+
+@media (min-width: 1824px) {
+  .container {
+    padding: 1.5rem 10rem;
+  }
+  .container section.content {
+    flex: 81%;
+  }
+  .container section.content .article:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+  .container section.content .article a .article-image {
+    height: 110px;
+  }
+  .container section.content .article a .article-content .article-date {
+    font-size: 18px;
+  }
+  .container section.content .article a .article-content .article-title {
+    margin: 8px auto 10px;
+    font-size: 20px;
+  }
+  .container section.content .article a .article-content .article-preview {
+    margin: 8px auto 0;
+    font-size: 16px;
+  }
+  .container .sidebar {
+    flex: 19%;
+  }
+}
+
+@media (min-width: 2560px) {
+  h2 {
+    font-size: 6rem;
+  }
+  .container .article:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+}

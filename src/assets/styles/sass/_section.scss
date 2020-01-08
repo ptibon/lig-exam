@@ -1,0 +1,82 @@
+// for all article
+.article {
+  a {
+    display: flex;
+    align-items: center;
+
+    .article-image {
+      object-fit: cover;
+    }
+
+    .article-date {
+      color: $gray;
+    }
+
+    .article-title {
+      font-weight: bold;
+
+      &:hover {
+        color: $yellow;
+        @include transition(all 0.4s ease);
+      }
+    }
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.5rem 7rem;
+  display: flex;
+
+  section.content {
+    flex: 74%;
+
+    .article {
+      &:not(:first-child) {
+        margin-top: 1.5rem;
+      }
+
+      a {
+        .article-image {
+          width: 210px;
+          height: 108px;
+        }
+
+        .article-content {
+          margin-left: 1.5rem;
+
+          .article-title {
+            margin: 4px auto 4px;
+          }
+          .article-preview {
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 1.3em;
+          }
+        }
+      }
+    }
+
+    .content-articles-footer {
+      margin: 4rem auto 2.5rem 0;
+      text-align: center;
+
+      &-btn {
+        position: relative;
+        cursor: pointer;
+        padding: 8px 12rem;
+        font-size: 20px;
+        color: #fff;
+        background-color: #333;
+
+        .content-articles-arrow {
+          position: absolute;
+          top: 35%;
+          right: 5%;
+          width: 8px;
+        }
+      }
+    }
+  }
+}

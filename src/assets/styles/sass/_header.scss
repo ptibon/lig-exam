@@ -1,0 +1,14 @@
+.site-header {
+  text-align: center;
+  border-top: 2px solid $yellow;
+  font-family: $header-font, sans-serif;
+
+  h2 {
+    padding: 15px;
+    a {
+      color: #333;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+  }
+}
