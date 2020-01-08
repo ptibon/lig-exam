@@ -94,9 +94,20 @@
   }
 
   .container {
-    .article {
-      &:not(:first-child) {
-        margin-top: 2.5rem;
+    padding: 1.5rem 20rem;
+
+    section.content {
+      .article {
+        a {
+          .article-content {
+            .article-title {
+              font-size: 24px;
+            }
+            .article-preview {
+              font-size: 19px;
+            }
+          }
+        }
       }
     }
   }
