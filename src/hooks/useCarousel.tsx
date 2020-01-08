@@ -34,10 +34,12 @@ export function useCarousel(
 
   if (state.desired !== state.active) {
     const dist = Math.abs(state.active - state.desired);
-    // const pref = Math.sign(0);
+
     const dir =
       (dist > length ? 1 : -1) * Math.sign(state.desired - state.active);
-    const shift = (100 * dir) / length;
+
+    const shift = ((100 * dir) / length) * dist;
+
     style.transition = smooth;
     style.transform = `translateX(${shift}%)`;
   }
